@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FAF7F0;
+    color: #40352D;
+    font-family: 'Montserrat', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C6A66B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A88B52;
+}
+
+/* Glassmorphism card for luxury feel */
+.luxury-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(232, 217, 197, 0.6);
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 15px 40px -15px rgba(64, 53, 45, 0.08), 0 0 20px 0 rgba(198, 166, 107, 0.05);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A88B52 0%, #C6A66B 50%, #E8D9C5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C6A66B 0%, #B89656 50%, #A88B52 100%);
+}
