@@ -12,8 +12,8 @@ export const Footer: React.FC = () => {
           WE CAN'T WAIT TO CELEBRATE WITH YOU!
         </p>
 
-        <h2 className="text-3xl sm:text-5xl font-serif tracking-[0.1em] font-light text-white lowercase">
-          shiljo <span className="text-gold font-script text-3xl sm:text-4xl inline-block px-1">&</span> rosemariya
+        <h2 className="text-4xl sm:text-6xl font-alex text-white tracking-wide">
+          shiljo <span className="font-serif italic text-gold text-3xl sm:text-5xl px-2">&</span> rosemariya
         </h2>
 
         <div className="flex items-center justify-center space-x-3 text-champagne/80">

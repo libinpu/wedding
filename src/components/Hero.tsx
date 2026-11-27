@@ -52,17 +52,17 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.6 }}
-          className="my-3 drop-shadow-lg text-center flex flex-col items-center"
+          className="my-4 drop-shadow-2xl text-center flex flex-col items-center"
         >
-          <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-light text-white tracking-wide lowercase first-letter:capitalize">
+          <div className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-alex text-white tracking-normal drop-shadow-md">
             shiljo
           </div>
-          <div className="my-1 sm:my-2">
-            <span className="text-3xl sm:text-5xl md:text-6xl font-script text-gold-light inline-block transform -rotate-6">
+          <div className="-my-2 sm:-my-4">
+            <span className="text-4xl sm:text-6xl md:text-7xl font-serif italic text-gold-light font-light drop-shadow">
               &
             </span>
           </div>
-          <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-light text-white tracking-wide lowercase first-letter:capitalize">
+          <div className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-alex text-white tracking-normal drop-shadow-md">
             rosemariya
           </div>
         </motion.div>
