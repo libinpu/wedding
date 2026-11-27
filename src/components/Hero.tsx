@@ -13,8 +13,8 @@ export const Hero: React.FC = () => {
           backgroundPosition: 'center 25%',
         }}
       >
-        {/* Soft Vignette & Luxury Dark Gold/Espresso Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-espresso/70 via-espresso/50 to-espresso/85" />
+        {/* Soft Vignette & Luxury Dark Gold/Mocha Brown Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-mocha-deep/80 via-mocha/60 to-mocha-dark/90" />
         <div className="absolute inset-0 bg-gradient-to-t from-ivory via-transparent to-transparent opacity-95 h-36 bottom-0" />
       </div>
 
@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           — 1 Peter 4:8
         </motion.p>
 
-        {/* Premium Gold CTA Button */}
+        {/* Premium CTA Button in Burnt Amber & Champagne Gold */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -104,10 +104,10 @@ export const Hero: React.FC = () => {
         >
           <a
             href="#invitation"
-            className="group relative inline-flex items-center space-x-3 px-8 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-espresso font-medium text-xs tracking-[0.25em] uppercase shadow-2xl hover:shadow-gold/30 hover:scale-105 active:scale-95 transition-all duration-300"
+            className="group relative inline-flex items-center space-x-3 px-8 py-4 rounded-full bg-gradient-to-r from-amber to-gold text-white font-medium text-xs tracking-[0.25em] uppercase shadow-2xl hover:shadow-amber/40 hover:scale-105 active:scale-95 transition-all duration-300"
           >
             <span>EXPLORE OUR WEDDING</span>
-            <Sparkles className="w-4 h-4 text-espresso group-hover:rotate-12 transition-transform duration-300" />
+            <Sparkles className="w-4 h-4 text-white group-hover:rotate-12 transition-transform duration-300" />
           </a>
         </motion.div>
       </div>

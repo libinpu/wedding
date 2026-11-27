@@ -182,7 +182,7 @@ export const WishesSection: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full py-3.5 px-6 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-espresso font-semibold text-xs tracking-[0.25em] uppercase shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex items-center justify-center space-x-2"
+                className="w-full py-3.5 px-6 rounded-full bg-gradient-to-r from-amber via-gold to-amber-rich text-white font-semibold text-xs tracking-[0.25em] uppercase shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <span>SEND BLESSINGS</span>
                 <Send className="w-3.5 h-3.5 ml-1" />

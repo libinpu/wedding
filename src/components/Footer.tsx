@@ -3,9 +3,9 @@ import { Heart } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-espresso text-ivory py-16 px-6 text-center relative border-t border-gold/20 overflow-hidden">
-      {/* Decorative background aura */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-24 bg-gold/10 rounded-full blur-3xl pointer-events-none" />
+    <footer className="bg-mocha-deep text-ivory py-16 px-6 text-center relative border-t border-amber/30 overflow-hidden">
+      {/* Decorative background aura in warm amber & gold */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-24 bg-amber/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto space-y-6 relative z-10">
         <p className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gold font-light">

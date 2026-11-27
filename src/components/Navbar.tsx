@@ -55,7 +55,7 @@ export const Navbar: React.FC = () => {
           ))}
           <a
             href="#wishes"
-            className="px-5 py-2 text-xs uppercase tracking-widest bg-gold hover:bg-gold-dark text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+            className="px-5 py-2 text-xs uppercase tracking-widest bg-gradient-to-r from-amber to-gold hover:from-amber-dark hover:to-gold-dark text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
           >
             Wish Couple
           </a>

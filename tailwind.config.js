@@ -7,21 +7,38 @@ export default {
   theme: {
     extend: {
       colors: {
-        ivory: '#FAF7F0',
-        champagne: '#E8D9C5',
-        'champagne-light': '#F4EDE4',
+        // Luxury Palette: Mocha Brown, Champagne Gold & Burnt Amber
+        ivory: '#FAF6F0',           // Warm cream backdrop
+        champagne: {
+          light: '#F4ECE1',
+          DEFAULT: '#E5D4BE',       // Champagne
+          gold: '#D4AF37',          // Champagne Gold
+          shimmer: '#EED9B3',
+        },
         gold: {
-          light: '#DBC39E',
-          DEFAULT: '#C6A66B',
-          dark: '#A88B52',
+          light: '#E5C483',
+          DEFAULT: '#D4AF37',       // Rich Champagne Gold
+          dark: '#B08832',
         },
+        amber: {
+          light: '#D97736',
+          DEFAULT: '#C05A1F',       // Burnt Amber
+          dark: '#9E4413',
+          rich: '#A34818',
+        },
+        mocha: {
+          light: '#5E4336',
+          DEFAULT: '#3D281D',       // Rich Mocha Brown
+          dark: '#2A1A12',
+          deep: '#1F130D',
+        },
+        espresso: '#3D281D',         // Map espresso to Mocha Brown
+        'espresso-light': '#5E4336',
         sage: {
-          light: '#C1C5AF',
-          DEFAULT: '#A5AA91',
-          dark: '#7D8269',
+          light: '#C59A78',
+          DEFAULT: '#C05A1F',       // Replaced with Amber
+          dark: '#9E4413',
         },
-        espresso: '#40352D',
-        'espresso-light': '#5A4C42',
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', '"Bodoni Moda"', '"Playfair Display"', 'Georgia', 'serif'],
