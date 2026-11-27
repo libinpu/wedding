@@ -24,10 +24,13 @@ export default {
         'espresso-light': '#5A4C42',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+        serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+        cinzel: ['"Cinzel"', '"Cinzel Decorative"', 'serif'],
+        'cinzel-dec': ['"Cinzel Decorative"', '"Cinzel"', 'serif'],
         cormorant: ['"Cormorant Garamond"', 'serif'],
+        playfair: ['"Playfair Display"', 'serif'],
         sans: ['Montserrat', 'Lato', 'sans-serif'],
-        script: ['"Great Vibes"', '"Alex Brush"', 'cursive'],
+        script: ['"Pinyon Script"', '"Great Vibes"', 'cursive'],
       },
       animation: {
         'float-slow': 'float 8s ease-in-out infinite',

@@ -16,7 +16,7 @@ export const LoveStory: React.FC = () => {
       number: '01',
       title: 'The First Meeting',
       quote: 'Every beautiful story has a beginning. Ours started with a simple hello.',
-      image: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80',
+      image: '/couple-story.jpg',
       date: 'Spring 2021',
     },
     {

@@ -9,12 +9,13 @@ export const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-1000 ease-out"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85')`,
+          backgroundImage: `url('/couple-hero.jpg')`,
+          backgroundPosition: 'center 25%',
         }}
       >
-        {/* Soft Vignette & Editorial Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-espresso/40 via-espresso/30 to-espresso/70 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ivory via-transparent to-transparent opacity-90 h-32 bottom-0" />
+        {/* Soft Vignette & Luxury Dark Gold/Espresso Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-espresso/70 via-espresso/50 to-espresso/85" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ivory via-transparent to-transparent opacity-95 h-36 bottom-0" />
       </div>
 
       {/* Decorative Frame */}
@@ -41,7 +42,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-xl md:text-2xl font-script tracking-wide text-champagne mb-2"
+          className="text-2xl md:text-4xl font-script tracking-wide text-champagne mb-2"
         >
           We're Getting Married!
         </motion.h2>
@@ -51,9 +52,9 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.6 }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] font-light uppercase my-2 drop-shadow-md"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-cinzel tracking-[0.18em] font-normal uppercase my-3 drop-shadow-lg text-white"
         >
-          Shiljo <span className="font-serif italic font-normal text-gold-light">&</span> Rosemariya
+          Shiljo <span className="font-serif italic font-light text-gold-light">&</span> Rosemariya
         </motion.h1>
 
         {/* Wedding Date */}

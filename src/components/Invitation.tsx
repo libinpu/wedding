@@ -47,10 +47,10 @@ export const Invitation: React.FC = () => {
 
           {/* Couple's Names Calligraphy Display */}
           <div className="py-6">
-            <h3 className="text-3xl sm:text-5xl md:text-6xl font-serif text-espresso tracking-widest uppercase">
+            <h3 className="text-3xl sm:text-5xl md:text-6xl font-cinzel text-espresso tracking-widest uppercase">
               Shiljo <span className="text-gold font-serif italic lowercase font-light">&</span> Rosemariya
             </h3>
-            <p className="text-xs uppercase tracking-[0.3em] text-espresso/60 mt-4">
+            <p className="text-xs uppercase tracking-[0.3em] text-espresso/60 mt-4 font-medium">
               Requests the honor of your presence
             </p>
           </div>

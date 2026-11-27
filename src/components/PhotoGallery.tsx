@@ -16,15 +16,21 @@ export const PhotoGallery: React.FC = () => {
 
   const photos: GalleryImage[] = [
     {
-      url: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85',
+      url: '/couple-hero.jpg',
       category: 'portraits',
-      title: 'Our Vow of Forever',
+      title: 'Together Forever',
+      aspect: 'aspect-[3/4]',
+    },
+    {
+      url: '/couple-story.jpg',
+      category: 'moments',
+      title: 'Our Beautiful Beginning',
       aspect: 'aspect-[3/4]',
     },
     {
       url: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=85',
       category: 'pre-wedding',
-      title: 'The Engagement Ring',
+      title: 'The Engagement Promise',
       aspect: 'aspect-square',
     },
     {
@@ -44,12 +50,6 @@ export const PhotoGallery: React.FC = () => {
       category: 'portraits',
       title: 'Golden Hour Embrace',
       aspect: 'aspect-[3/4]',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=85',
-      category: 'pre-wedding',
-      title: 'Coastal Walk Romance',
-      aspect: 'aspect-[4/5]',
     },
   ];
 
