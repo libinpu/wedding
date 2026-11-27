@@ -7,38 +7,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Luxury Palette: Mocha Brown, Champagne Gold & Burnt Amber
-        ivory: '#FAF6F0',           // Warm cream backdrop
-        champagne: {
-          light: '#F4ECE1',
-          DEFAULT: '#E5D4BE',       // Champagne
-          gold: '#D4AF37',          // Champagne Gold
-          shimmer: '#EED9B3',
-        },
+        // Luxury Royal Wedding Palette: Warm Alabaster, Rose-Champagne, Royal Antique Gold, Deep Midnight Espresso
+        ivory: '#FAF6F0',
+        champagne: '#E5D5C3',
+        'champagne-light': '#F5ECE1',
         gold: {
-          light: '#E5C483',
-          DEFAULT: '#D4AF37',       // Rich Champagne Gold
-          dark: '#B08832',
+          light: '#E2CA9E',
+          DEFAULT: '#BF9854',
+          dark: '#9A7432',
         },
-        amber: {
-          light: '#D97736',
-          DEFAULT: '#C05A1F',       // Burnt Amber
-          dark: '#9E4413',
-          rich: '#A34818',
-        },
-        mocha: {
-          light: '#5E4336',
-          DEFAULT: '#3D281D',       // Rich Mocha Brown
-          dark: '#2A1A12',
-          deep: '#1F130D',
-        },
-        espresso: '#3D281D',         // Map espresso to Mocha Brown
-        'espresso-light': '#5E4336',
         sage: {
-          light: '#C59A78',
-          DEFAULT: '#C05A1F',       // Replaced with Amber
-          dark: '#9E4413',
+          light: '#BFC7B7',
+          DEFAULT: '#9AA690',
+          dark: '#6F7B65',
         },
+        rose: {
+          subtle: '#E8D4CE',
+          dusty: '#C99D93',
+          burgundy: '#5A2A27',
+        },
+        espresso: '#2B2118',
+        'espresso-light': '#4A3B2C',
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', '"Bodoni Moda"', '"Playfair Display"', 'Georgia', 'serif'],
