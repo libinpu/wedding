@@ -64,18 +64,18 @@ export const LoveStory: React.FC = () => {
               >
                 {/* Image side with editorial framing */}
                 <div className="w-full md:w-1/2 relative group">
-                  <div className="relative overflow-hidden rounded-2xl shadow-xl aspect-[4/3] bg-champagne-light">
+                  <div className="relative overflow-hidden rounded-2xl shadow-xl aspect-[3/4] sm:aspect-[4/5] max-w-md mx-auto bg-champagne-light">
                     <img
                       src={moment.image}
                       alt={moment.title}
                       loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-[0.98] contrast-[1.02]"
+                      className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-[0.98] contrast-[1.02]"
                     />
                     <div className="absolute inset-0 bg-espresso/10 transition-opacity group-hover:opacity-0" />
                   </div>
                   {/* Decorative Frame border offset */}
                   <div
-                    className={`absolute -inset-3 border border-gold/40 rounded-2xl -z-10 transition-transform duration-500 group-hover:scale-102 ${
+                    className={`absolute -inset-3 border border-gold/40 rounded-2xl -z-10 transition-transform duration-500 group-hover:scale-102 max-w-md mx-auto ${
                       isEven ? 'translate-x-2 translate-y-2' : '-translate-x-2 translate-y-2'
                     }`}
                   />
