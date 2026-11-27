@@ -48,14 +48,24 @@ export const Hero: React.FC = () => {
         </motion.h2>
 
         {/* Couple Names */}
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.6 }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-cinzel tracking-[0.18em] font-normal uppercase my-3 drop-shadow-lg text-white"
+          className="my-3 drop-shadow-lg text-center"
         >
-          Shiljo <span className="font-serif italic font-light text-gold-light">&</span> Rosemariya
-        </motion.h1>
+          <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-cinzel tracking-[0.2em] font-normal uppercase text-white">
+            SHILJO
+          </div>
+          <div className="my-1 sm:my-2">
+            <span className="text-3xl sm:text-5xl md:text-6xl font-script text-gold-light inline-block transform -rotate-6">
+              &
+            </span>
+          </div>
+          <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-cinzel tracking-[0.2em] font-normal uppercase text-white">
+            ROSEMARIYA
+          </div>
+        </motion.div>
 
         {/* Wedding Date */}
         <motion.div

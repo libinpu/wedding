@@ -46,11 +46,17 @@ export const Invitation: React.FC = () => {
           </p>
 
           {/* Couple's Names Calligraphy Display */}
-          <div className="py-6">
-            <h3 className="text-3xl sm:text-5xl md:text-6xl font-cinzel text-espresso tracking-widest uppercase">
-              Shiljo <span className="text-gold font-serif italic lowercase font-light">&</span> Rosemariya
-            </h3>
-            <p className="text-xs uppercase tracking-[0.3em] text-espresso/60 mt-4 font-medium">
+          <div className="py-6 flex flex-col items-center">
+            <span className="text-3xl sm:text-5xl md:text-6xl font-cinzel text-espresso tracking-[0.2em] uppercase font-normal">
+              SHILJO
+            </span>
+            <span className="text-3xl sm:text-5xl font-script text-gold my-1 sm:my-2 inline-block transform -rotate-6">
+              &
+            </span>
+            <span className="text-3xl sm:text-5xl md:text-6xl font-cinzel text-espresso tracking-[0.2em] uppercase font-normal">
+              ROSEMARIYA
+            </span>
+            <p className="text-xs uppercase tracking-[0.3em] text-espresso/60 mt-5 font-medium">
               Requests the honor of your presence
             </p>
           </div>
