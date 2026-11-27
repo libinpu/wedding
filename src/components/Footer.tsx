@@ -1,11 +1,11 @@
 import React from 'react';
-import { Heart } from 'lucide-react';
+import { Heart, Instagram } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-mocha-deep text-ivory py-16 px-6 text-center relative border-t border-amber/30 overflow-hidden">
-      {/* Decorative background aura in warm amber & gold */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-24 bg-amber/20 rounded-full blur-3xl pointer-events-none" />
+    <footer className="bg-espresso text-ivory py-16 px-6 text-center relative border-t border-gold/20 overflow-hidden">
+      {/* Decorative background aura */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-24 bg-gold/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto space-y-6 relative z-10">
         <p className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gold font-light">
@@ -15,6 +15,28 @@ export const Footer: React.FC = () => {
         <h2 className="text-4xl sm:text-6xl font-alex text-white tracking-wide">
           shiljo <span className="font-serif italic text-gold text-3xl sm:text-5xl px-2">&</span> rosemariya
         </h2>
+
+        {/* Instagram Profiles */}
+        <div className="flex flex-wrap items-center justify-center gap-4 py-2">
+          <a
+            href="https://www.instagram.com/shiljovj?lqvp=YWxqbHN5djltOTBx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 hover:bg-gold hover:text-white border border-champagne/30 text-xs text-champagne tracking-wider transition-all duration-300 group"
+          >
+            <Instagram className="w-3.5 h-3.5 text-gold group-hover:text-white transition-colors" />
+            <span>@shiljovj</span>
+          </a>
+          <a
+            href="https://www.instagram.com/rose_mariya_vino?fqnt=YzJub3NhdG43cm45"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 hover:bg-gold hover:text-white border border-champagne/30 text-xs text-champagne tracking-wider transition-all duration-300 group"
+          >
+            <Instagram className="w-3.5 h-3.5 text-gold group-hover:text-white transition-colors" />
+            <span>@rose_mariya_vino</span>
+          </a>
+        </div>
 
         <div className="flex items-center justify-center space-x-3 text-champagne/80">
           <span className="h-[1px] w-10 bg-gold/40"></span>

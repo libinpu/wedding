@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FloralDivider } from './FloralDecorations';
-import { CalendarHeart } from 'lucide-react';
+import { CalendarHeart, Instagram } from 'lucide-react';
 
 export const Invitation: React.FC = () => {
   return (
@@ -59,6 +59,29 @@ export const Invitation: React.FC = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-espresso/60 mt-5 font-medium">
               Requests the honor of your presence
             </p>
+
+            {/* Couple Instagram Profile Links */}
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
+              <a
+                href="https://www.instagram.com/shiljovj?lqvp=YWxqbHN5djltOTBx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-champagne-light/60 hover:bg-gold hover:text-white border border-champagne text-[11px] text-espresso tracking-wider transition-all duration-300 group"
+              >
+                <Instagram className="w-3.5 h-3.5 text-gold group-hover:text-white transition-colors" />
+                <span className="font-medium">@shiljovj</span>
+              </a>
+              <span className="text-gold/40 text-xs">•</span>
+              <a
+                href="https://www.instagram.com/rose_mariya_vino?fqnt=YzJub3NhdG43cm45"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-champagne-light/60 hover:bg-gold hover:text-white border border-champagne text-[11px] text-espresso tracking-wider transition-all duration-300 group"
+              >
+                <Instagram className="w-3.5 h-3.5 text-gold group-hover:text-white transition-colors" />
+                <span className="font-medium">@rose_mariya_vino</span>
+              </a>
+            </div>
           </div>
 
           <div className="mt-8 pt-8 border-t border-champagne/60 flex flex-wrap items-center justify-center gap-6 text-xs uppercase tracking-[0.2em] text-espresso/70">
