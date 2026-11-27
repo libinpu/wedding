@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, MapPin, ExternalLink, Church, Wine } from 'lucide-react';
+import { Calendar, Clock, MapPin, ExternalLink, Church, Wine, CalendarPlus, Check } from 'lucide-react';
 import { FloralDivider } from './FloralDecorations';
 
 export const WeddingDetails: React.FC = () => {
+  const [calendarAdded, setCalendarAdded] = useState(false);
+
+  const handleAddToCalendar = () => {
+    const title = encodeURIComponent("Shiljo & Rosemariya's Wedding");
+    const details = encodeURIComponent(
+      "Holy Matrimony at St. Mary's Church, Ottapalam (10:30 AM) followed by Wedding Reception at Suriya Auditorium (12:30 PM)."
+    );
+    const location = encodeURIComponent("St. Mary's Church, Palappuram, Ottapalam, Kerala 679103");
+    const dates = "20270114T050000Z/20270114T113000Z"; // 10:30 AM to 5:00 PM IST in UTC
+    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dates}&details=${details}&location=${location}`;
+
+    window.open(googleCalendarUrl, '_blank');
+    setCalendarAdded(true);
+    setTimeout(() => setCalendarAdded(false), 3000);
+  };
   const events = [
     {
       type: 'The Ceremony',
@@ -41,6 +56,26 @@ export const WeddingDetails: React.FC = () => {
           <p className="text-espresso/70 text-sm max-w-md mx-auto">
             We have gathered all the essential information to help you plan your presence at our celebration.
           </p>
+        </div>
+
+        {/* Quick Add to Calendar Button */}
+        <div className="flex justify-center mb-10">
+          <button
+            onClick={handleAddToCalendar}
+            className="inline-flex items-center space-x-2 px-6 py-2.5 rounded-full bg-white border border-champagne hover:border-gold hover:text-gold shadow-sm text-xs uppercase tracking-widest text-espresso font-medium transition-all duration-300 transform hover:-translate-y-0.5"
+          >
+            {calendarAdded ? (
+              <>
+                <Check className="w-4 h-4 text-emerald-600" />
+                <span className="text-emerald-700">Opening Calendar...</span>
+              </>
+            ) : (
+              <>
+                <CalendarPlus className="w-4 h-4 text-gold" />
+                <span>Save Date to Google Calendar</span>
+              </>
+            )}
+          </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
