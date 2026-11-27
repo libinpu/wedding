@@ -8,7 +8,7 @@
   }
   body {
     background-color: #FAF6F0;
-    color: #2B2118;
+    color: #362319;
     font-family: 'Montserrat', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -16,7 +16,7 @@
   }
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar with Champagne Gold & Mocha Brown */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -24,31 +24,36 @@
   background: #FAF6F0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #BF9854;
+  background: #D4AF6A;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9A7432;
+  background: #B85D19;
 }
 
-/* Glassmorphism card for luxury feel */
+/* Glassmorphism luxury card */
 .luxury-glass {
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(229, 213, 195, 0.7);
+  border: 1px solid rgba(212, 175, 106, 0.45);
 }
 
 .luxury-card-shadow {
-  box-shadow: 0 20px 45px -15px rgba(43, 33, 24, 0.08), 0 0 25px 0 rgba(191, 152, 84, 0.06);
+  box-shadow: 0 18px 45px -15px rgba(54, 35, 25, 0.12), 0 0 25px 0 rgba(212, 175, 106, 0.08);
 }
 
+/* Champagne Gold & Burnt Amber Gradients */
 .gold-gradient-text {
-  background: linear-gradient(135deg, #9A7432 0%, #BF9854 50%, #E2CA9E 100%);
+  background: linear-gradient(135deg, #B85D19 0%, #D4AF6A 50%, #F5ECDF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gold-gradient-bg {
-  background: linear-gradient(135deg, #BF9854 0%, #AF8744 50%, #9A7432 100%);
+  background: linear-gradient(135deg, #D4AF6A 0%, #C96D29 50%, #B85D19 100%);
+}
+
+.amber-gradient-bg {
+  background: linear-gradient(135deg, #B85D19 0%, #C96D29 50%, #D4AF6A 100%);
 }

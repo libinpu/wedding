@@ -13,8 +13,8 @@ export const Hero: React.FC = () => {
           backgroundPosition: 'center 25%',
         }}
       >
-        {/* Soft Vignette & Luxury Dark Gold/Mocha Brown Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-mocha-deep/80 via-mocha/60 to-mocha-dark/90" />
+        {/* Soft Vignette & Luxury Mocha Brown / Burnt Amber Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-mocha-dark/75 via-mocha/55 to-mocha-deep/90" />
         <div className="absolute inset-0 bg-gradient-to-t from-ivory via-transparent to-transparent opacity-95 h-36 bottom-0" />
       </div>
 
@@ -72,7 +72,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="flex items-center space-x-2 my-4 px-6 py-1.5 rounded-full bg-black/20 backdrop-blur-sm border border-champagne/30 text-champagne-light text-xs sm:text-sm tracking-[0.25em] uppercase"
+          className="flex items-center space-x-2 my-4 px-6 py-1.5 rounded-full bg-mocha-dark/40 backdrop-blur-md border border-champagne-gold/40 text-champagne-light text-xs sm:text-sm tracking-[0.25em] uppercase shadow-lg shadow-black/20"
         >
           <Calendar className="w-4 h-4 text-gold-light mr-1 inline" />
           <span>14 JANUARY 2027</span>
@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           — 1 Peter 4:8
         </motion.p>
 
-        {/* Premium CTA Button in Burnt Amber & Champagne Gold */}
+        {/* Premium Gold & Burnt Amber CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -104,9 +104,9 @@ export const Hero: React.FC = () => {
         >
           <a
             href="#invitation"
-            className="group relative inline-flex items-center space-x-3 px-8 py-4 rounded-full bg-gradient-to-r from-amber to-gold text-white font-medium text-xs tracking-[0.25em] uppercase shadow-2xl hover:shadow-amber/40 hover:scale-105 active:scale-95 transition-all duration-300"
+            className="group relative inline-flex items-center space-x-3 px-8 py-4 rounded-full bg-gradient-to-r from-amber-burnt via-gold to-amber-warm text-mocha-deep font-semibold text-xs tracking-[0.25em] uppercase shadow-2xl hover:shadow-amber-burnt/40 hover:scale-105 active:scale-95 transition-all duration-300"
           >
-            <span>EXPLORE OUR WEDDING</span>
+            <span className="text-white drop-shadow">EXPLORE OUR WEDDING</span>
             <Sparkles className="w-4 h-4 text-white group-hover:rotate-12 transition-transform duration-300" />
           </a>
         </motion.div>
