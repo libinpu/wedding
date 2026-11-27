@@ -44,9 +44,24 @@ export const Footer: React.FC = () => {
           <span className="h-[1px] w-10 bg-gold/40"></span>
         </div>
 
-        <div className="pt-8 border-t border-white/10 flex items-center justify-center space-x-2 text-xs text-champagne/60 tracking-wider">
-          <span>Made with Love</span>
-          <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400 inline" />
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs text-champagne/60 tracking-wider">
+          <div className="flex items-center space-x-1.5">
+            <span>Made with Love</span>
+            <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400 inline" />
+          </div>
+          <span className="hidden sm:inline text-gold/40">•</span>
+          <div className="flex items-center space-x-1.5">
+            <span>Created by</span>
+            <a
+              href="https://www.instagram.com/libin_p.ulahannan?lqvp=MTBsd2ViODlqMGM3cg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-1 text-gold hover:text-white transition-colors duration-200 font-medium underline underline-offset-4 decoration-gold/40 hover:decoration-white"
+            >
+              <Instagram className="w-3 h-3" />
+              <span>Libin P Ulahannan</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
