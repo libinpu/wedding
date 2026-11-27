@@ -182,10 +182,14 @@ export const WishesSection: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full py-4 px-6 rounded-full bg-gradient-to-r from-amber-burnt via-gold to-amber-warm text-white font-bold text-sm tracking-[0.2em] uppercase shadow-xl hover:shadow-amber-burnt/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center space-x-2 border border-gold/40 cursor-pointer"
+                style={{
+                  background: 'linear-gradient(135deg, #B85D19 0%, #C96D29 50%, #8A3D0B 100%)',
+                  color: '#FFFFFF',
+                }}
+                className="w-full py-4 px-6 rounded-full font-bold text-sm tracking-[0.2em] uppercase shadow-2xl hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-[#D4AF6A] cursor-pointer"
               >
-                <span className="drop-shadow">SEND BLESSINGS</span>
-                <Send className="w-4 h-4 ml-1 drop-shadow" />
+                <span className="font-semibold text-white drop-shadow-md">SEND BLESSINGS</span>
+                <Send className="w-4 h-4 ml-1.5 text-white drop-shadow-md" />
               </button>
             </form>
           </motion.div>
