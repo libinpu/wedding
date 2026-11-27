@@ -1,11 +1,7 @@
-# Render Blueprint (Infrastructure as Code)
-# Docs: https://render.com/docs/blueprint-spec
-
 services:
-  # Option 1: Static Site (Fast, Free, Perfect for Vite / React)
   - type: web
     name: shiljo-rosemariya-wedding
-    env: static
+    runtime: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
